@@ -6,7 +6,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        // Матрица в формате CCS (Compressed Column Storage)
         double[] values = {2, 1, 3, 5, 7};
         int[] rowIndices = {1, 3, 0, 2, 3};
         int[] colPointers = {0, 1, 2, 3, 5};
