@@ -1,4 +1,8 @@
 package lab3;
+/*Задача14
+Дано бинарное дерево.
+Найти поддерево не включающее ни одну из заданных вершин.
+ */
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,14 +16,10 @@ public class Main {
         root.left.right.left = new TreeNode(8);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
-
         Set<Integer> forbidden = new HashSet<>();
         forbidden.add(5);
-
-        TreeNode result = SubtreeFinder.findLargestCleanSubtree(root, forbidden);
-
+        TreeNode result = SubtreeFinder.findLargestSubtree(root, forbidden);
         System.out.println("Запрещённые вершины: " + forbidden);
-
         if (result == null) {
             System.out.println("Чистого поддерева не найдено");
         } else {
