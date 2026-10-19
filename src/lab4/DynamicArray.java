@@ -30,7 +30,7 @@ public class DynamicArray{
     private void grow(){
         Node[] newItems = new Node[items.length * 2];
         for (int i=0; i<items.length; i++) {
-            newItems[i] = items[i];
+            newItems[i]=items[i];
         }
         items = newItems;
     }
